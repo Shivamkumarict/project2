@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        body {
+            margin: 10px 0px;
+            padding: 0px;
+            background: rgba(54, 54, 255, 0.822);
+            animation: animation 2s ease-in 0s infinite forwards;
+        }
+        @keyframes animation{
+            0%{
+                background: rgba(54, 54, 255, 0.822);
+
+            }
+            50%{
+                background: rgba(26, 230, 26, 0.801);
+            }
+            98%{
+                background: rgba(54, 54, 255, 0.822);
+            }
+        }
+        .navbar .nav {
+            list-style: none;
+            border: 2px solid black;
+            background: rgba(0, 0, 0, 0.644);
+            font-family: cursive;
+            color: white;
+            padding: 10px 25px;
+            box-sizing: border-box;
+            margin: 0px;
+            box-shadow:2px 2px 12px 12px rgba(38, 38, 240, 0.795);
+        }
+
+        .nav .item {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .nav .item:hover {
+            color: rgba(224, 219, 219, 0.89);
+            font-style: italic;
+            text-decoration: none;
+        }
+
+        .nav .item a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .nav input {
+            font-size: 20px;
+            padding: 3px 10px;
+            float: right;
+            margin: -5px 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .container h1 {
+            font-size: 10em;
+            text-align: center;
+            color: white;
+            margin-top: 220px;
+            font-family: monospace;
+            box-shadow: 4px 4px 12px 12px rgba(248, 248, 26, 0.733);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="navbar">
+                <ul class="nav">
+                    <li class="item"><a href="#">Home</a></li>
+                    <li class="item"><a href="#">Services</a></li>
+                    <li class="item"><a href="#">About Us</a></li>
+                    <li class="item"><a href="#">Fun Scats</a></li>
+                    <li class="item"><a href="#">Contact Us</a></li>
+                    <input type="search" placeholder="Search">
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>NAMASTE WORLD!!</h1>
+    </div>
+</body>
+
+</html>
